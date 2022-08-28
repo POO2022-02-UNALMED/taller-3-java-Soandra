@@ -58,12 +58,20 @@ public class TV {
         estado = true;
     }
 
-    public void turnOf(){
+    public void turnOff(){
         estado = false;
     }
 
     public boolean getEstado() {
         return estado;
+    }
+
+    public static int getNumTv() {
+        return numTv;
+    }
+
+    public static void setNumTv(int numTv) {
+        TV.numTv = numTv;
     }
 
     public void canalUp(){
